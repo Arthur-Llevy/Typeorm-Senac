@@ -27,7 +27,7 @@ class ProdutoEstoqueRepository {
     async retrieveAll(): Promise<Array<ProdutoEstoque>> {
         try {
             return this.produtoEstoqueRepository.find({
-                relations: ["roduto"], // Se houver relacionamento com Produto
+                relations: ["produto"], // Se houver relacionamento com Produto
             });
         } catch (error) {
             throw new Error("Falha ao retornar os estoques de produtos!");
