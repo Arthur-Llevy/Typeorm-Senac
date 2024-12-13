@@ -4,7 +4,7 @@ import { Produto } from "./produto";
 @Entity("ProdutoEstoque")
 export class ProdutoEstoque {
     @PrimaryColumn({ name: "id_produto" })
-    idProduto: number;
+    idProduto: number; // Chave primária
 
     @Column({ type: "int", default: 0 })
     quantidade: number;
