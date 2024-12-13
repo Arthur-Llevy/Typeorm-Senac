@@ -1,0 +1,168 @@
+
+#btn-menu{
+    padding: 5px;
+    border-color: rgba(255, 255, 255, 0.096);
+    margin-right: 20px;
+}
+
+#menu-burguer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#menu-burguer img{
+    width: 35px;
+}
+
+#logo{
+    color: white;
+    font-size: 1.25rem;
+}
+
+.navbar{
+    --bs-navbar-active-color: yellow;
+    background-color: #052B48;
+}
+
+.navbar-nav .nav-link.show {
+    ----bs-navbar-active-color: yellow;
+    color: var(--bs-navbar-active-color) !important;
+}
+
+.navbar a:focus {
+    color: #ffcb00; /* Cor dourada quando o link for focado */
+  }
+
+.navbar a{
+    color: #E2C064;
+}
+
+.navbar a:hover{
+    color: white;
+}
+
+.navbar a:active{
+    color: yellow;
+}
+
+#carouselExample{
+    margin-top: 5rem;
+}
+
+.navbar-collapse{
+    background-color: #052B48;
+    width: 100%;
+    margin-left: -10px;
+    padding-left: 10px;
+}
+
+.carousel-item img{
+    height: 60vh;
+    width: 100vw;
+    object-fit: cover;
+    object-position: top -150px left 0px;
+}
+
+#img3 img, #img4 img{
+    object-fit: cover;
+    object-position: center;
+}
+
+main{
+    background-color: #F1EBE5;
+}
+
+section{
+    scroll-margin-top: 6rem;
+}
+
+#servicos .card{
+    overflow: hidden;
+    min-width: 300px;
+}
+
+#servicos .card a{
+    width: 200px;
+}
+
+#servicos .card img{
+    width: 102%;
+    margin: auto;
+    object-fit: cover;
+    object-position: -3px -5px;
+}
+
+#servicos .card h5{
+    font-size: 1.1rem;
+}
+
+#sobre img{
+    max-width: 40rem;
+    width: 100%;
+    height: 300px;
+}
+
+#sobre p{
+  text-indent: 30px;
+}
+
+#depoimentos .card{
+    --bs-card-border-color: #553566;
+}
+
+#depoimentos p{
+    font-size: 16px;
+    text-indent: 0;
+}
+
+footer{
+    background-color: #052B48;
+    color: #E2C064;
+}
+
+footer #logo-senac img{
+    width: 140px;
+}
+
+footer h5{
+    color: white;
+}
+
+footer ul{
+    list-style: none;
+    padding: 0;
+}
+
+footer #logos-social{
+    width: 150px;
+}
+
+footer #logos-social .col{
+    width: 20px;
+}
+
+footer #localizacao a{
+    color: #E2C064;
+    text-decoration: none;
+}
+
+footer #localizacao a img{
+    color: #E2C064;
+}
+
+@media (max-width: 760px) {
+
+    .carousel-item img{
+        height: 55vh;
+        object-position: center;
+    }
+
+    #servicos .card{
+        max-width: 25rem;
+        margin: auto;
+        & img{
+            height: 170px;;
+        }
+    }
+}

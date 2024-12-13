@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Salão Escola Senac</title>
+  <!--Logo-->
+  <link rel="shortcut icon" href="assets/imagens/logo-salao-transformed.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="assets/estilos/home.css">
+
+  <!-- Link do CSS BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <header>
+    <div class="container p-2">
+      <nav class="navbar navbar-expand-lg fixed-top ps-lg-5">
+        <div class="container-fluid">
+          <a class="navbar-brand" id="logo" href="#">
+            <img src="assets/imagens/logo-salao.png" alt="Bootstrap" width="75" height="75">
+
+          </a>
+          <button class="navbar-toggler" id="btn-menu" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span id="menu-burguer"><img src="assets/icones/menu-burguer.svg" alt=""></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <div class="row w-100">
+              <!-- Links do menu principal -->
+              <div class="col-lg-10 col-md-12">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#servicos">Serviços</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#sobre">Sobre nós</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#depoimentos">Depoimentos</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- Dropdown alinhado mais à direita -->
+              <div class="col-lg-2 col-md-12">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Visitante
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-start">
+                      <li><a class="dropdown-item" href="src/login.html">Funcionário</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/imagens/imagem-carousel-1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/imagens/imagem-carousel-2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" id="img3">
+          <img src="assets/imagens/imagem-carousel-3.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" id="img4">
+          <img src="assets/imagens/imagem-carousel-4.png"  class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!--Serviços-->
+    <section class="pt-5 text-center container mb-5" id="servicos">
+      <h2>Nossos Serviços</h2>
+      <hr>
+      <div class="row row-cols-1 row-cols-md-3 mt-1 row-gap-4">
+        <div class="col col-lg-4 col-md-6">
+          <div class="card">
+            <img src="assets/imagens/card-1-manicure.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Manicure e Pedicure</h5>
+              <h6>R$ 50,00</h6>
+              <p class="card-text">Realce suas unhas com nosso serviço de Unha de Gel. Escolha o formato perfeito e uma
+                decoração única para destacar seu estilo, com durabilidade e um acabamento impecável.</p>
+              <a class="btn btn-primary" role="button">Agende aqui</a>
+            </div>
+          </div>
+        </div>
+        <div class="col col-lg-4 col-md-6">
+          <div class="card">
+            <img src="assets/imagens/card-2-sobrancelhas.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Sobrancelhas e maquiagens</h5>
+              <h6>R$ 50,00</h6>
+              <p class="card-text">Destaque o olhar com nosso serviço de Extensão de Cílios. Adicione volume,
+                comprimento e definição para cílios impecáveis que valorizam sua beleza natural com um toque duradouro
+                de glamour.</p>
+              <a class="btn btn-primary" role="button">Agende aqui</a>
+            </div>
+          </div>
+        </div>
+        <div class="col col-lg-4 col-md-6">
+          <div class="card">
+            <img src="assets/imagens/card-3-corte-masculino.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Transformação de Cabelos Masculinos</h5>
+              <h6>R$ 50,00</h6>
+              <p class="card-text">Renove seu visual com nosso serviço de Corte de Cabelo Masculino. Oferecemos estilos
+                modernos e clássicos, personalizados para realçar sua personalidade e proporcionar um acabamento
+                impecável.</p>
+              <a class="btn btn-primary" role="button">Agende aqui</a>
+            </div>
+          </div>
+        </div>
+        <div class="col col-lg-4 col-md-6">
+          <div class="card">
+            <img src="assets/imagens/card-4-corte-feminino.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Transformação de Cabelos Femininos</h5>
+              <h6>R$ 50,00</h6>
+              <p class="card-text">Transforme seu look com cortes femininos feitos para realçar sua beleza e expressar
+                sua essência, com um acabamento elegante e personalizado.</p>
+              <a class="btn btn-primary" role="button">Agende aqui</a>
+            </div>
+          </div>
+        </div>
+        <div class="col col-lg-4 col-md-6">
+          <div class="card">
+            <img src="assets/imagens/card-5-cor-de-cabelo.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Transformação de Cor dos Cabelos</h5>
+              <h6>R$ 50,00</h6>
+              <p class="card-text">Transforme seu look com cortes femininos feitos para realçar sua beleza e expressar
+                sua essência, com um acabamento elegante e personalizado.</p>
+              <a class="btn btn-primary" role="button">Agende aqui</a>
+            </div>
+          </div>
+        </div>
+        <div class="col col-lg-4 col-md-6">
+          <div class="card">
+            <img src="assets/imagens/card-6-estetica.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Serviços de Estética</h5>
+              <h6>R$ 50,00</h6>
+              <p class="card-text">Encontre a expressão perfeita da sua beleza com nossa maquiagem sofisticada,
+                desenhada para destacar seus traços e criar looks marcantes para cada ocasião.</p>
+              <a class="btn btn-primary" role="button">Agende aqui</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!--Sobre-->
+    <section class="text-center container" id="sobre">
+      <h2>Sobre</h2>
+      <hr>
+      <div class="row d-flex align-items-start pt-4 p-auto">
+        <div class="col-12 col-md-12 col-lg-6 ps-3 pe-3">
+          <img src="assets/imagens/imagem-sobre.jpg" alt="">
+        </div>
+        <div class="col text-start pt-3 pe-3 ps-3 pt-lg-0">
+          <p> O Salão Empresa Pedagógica conta com uma estrutura moderna e profissionais altamente qualificados, para
+            proporcionar os cuidados que você precisa. São oferecidos serviços de manicure, pedicure, cortes
+            masculinos e femininos, mechas e cuidados com todos os tipos de cabelo, design de sobrancelha, depilação,
+            massagem, podologia, entre outros.</p>
+          <p>O Salão Empresa Pedagógica também dispõe de formações profissionais voltadas para quem deseja aprender ou
+            se especializar na área de Beleza. As formações proporcionam ao aluno a oportunidade de conhecer as
+            melhores técnicas e rotinas do mercado.</p>
+        </div>
+      </div>
+    </section>
+
+    <!--Depoimentos-->
+    <section class="container mt-5 pb-5" id="depoimentos">
+      <h2 class="text-center">Depoimentos</h2>
+      <hr>
+
+      <div class="row pt-4 d-flex flex-wrap row-gap-3">
+        <div class="col">
+          <div class="card p-2 m-auto" style="max-width: 30rem; min-width: 20rem;">
+            <div class="card-body">
+              <h5 class="card-title text-start mb-3">Camila S.</h5>
+              <p class="card-text">"Adoro o atendimento e o cuidado que recebo aqui! Sempre saio do
+                salão me sentindo renovada. Super recomendo!"</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card p-2 m-auto" style="max-width: 30rem; min-width: 20rem;">
+            <div class="card-body">
+              <h5 class="card-title text-start mb-3">Fernanda P.</h5>
+              <p class="card-text">"O ambiente é acolhedor e a equipe é muito profissional. Meu cabelo nunca esteve
+                tão bonito! Volto sempre."</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card p-2 m-auto" style="max-width: 30rem; min-width: 20rem;">
+            <div class="card-body">
+              <h5 class="card-title text-start mb-3">Carlos M.</h5>
+              <p class="card-text">"Atendimento de primeira e um ambiente super descontraído. Meu cabelo e barba
+                estão sempre no capricho."</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <!--Rodapé-->
+  <footer>
+    <div class="container pt-5">
+      <div class="row">
+        <div class="col-lg-3 col-sm-4 col-6" id="logo-senac">
+          <img src="assets/imagens/logo-salao.png" alt="">
+        </div>
+        <div class="col-lg-3  col-sm-4 col-6 text-start">
+          <h5>Menu</h5>
+          <ul>
+            <li>Home</li>
+            <li>Sobre</li>
+            <li>Produtos</li>
+            <li>Novidades</li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-sm-4 col-6">
+          <h5>Contato</h5>
+          <ul>
+            <li>contato@contato.com</li>
+            <li>(81) 3413.6688 / 6647</li>
+            <li>CEP: 50.050-540</li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-sm-6 col-6">
+          <h5>Social</h5>
+          <div class="row" id="logos-social">
+            <div class="col">
+              <img src="assets/icones/facebook.svg" alt="">
+            </div>
+            <div class="col">
+              <img src="assets/icones/instagram.svg" alt="">
+            </div>
+            <div class="col">
+              <img src="assets/icones/twitter.svg" alt="">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="row mt-1" id="localizacao">
+      <div class="col text-center ps-4 pe-4">
+        <hr>
+        <a href="https://maps.app.goo.gl/xmRR5JntNLbk29n67" target="_blank"><img src="assets/icones/geo-location.svg"
+            alt=""> Pernambuco - Av. Visconde de Suassuna, 500 - Santo Amaro - Recife</a>
+      </div>
+    </div>
+    <div class="row mt-4 pb-4 ps-3 pe-3">
+      <div class="col-lg-6 col-sm-12 col-12 text-lg-end text-center pb-4">Salão de Beleza do SENAC © Copyright 2024 -
+        Todos os direitos reservados.</div>
+      <div class="col-lg-3 col-sm-6 col-12 text-center pb-4">Termos de Uso</div>
+      <div class="col-lg-3 col-sm-6 col-12 text-sm-left text-center">Politica de Privacidade</div>
+    </div>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
